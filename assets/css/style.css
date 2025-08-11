@@ -408,8 +408,16 @@ a {
   background: #2E2100;
 }
 
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+
+}
+
 .feedback-item {
   display: flex;
+  width: 100%;
+  flex-shrink: 0;
 }
 
 .feedback-item .avatar {
@@ -420,6 +428,7 @@ a {
 }
 
 .feedback-item .info .member-name {
+  margin-top: 18px;
   color: #F7F7F7;
   font-family: var(--font-heading);
   font-size: 2.4rem;
@@ -428,6 +437,7 @@ a {
 }
 
 .feedback-item .info .desc {
+  margin-top: 4px;
   color: #BFBCB2;
   font-size: 1.4rem;
   line-height: 1.86; /* 185.714% */
