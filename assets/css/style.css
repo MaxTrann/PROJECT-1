@@ -562,12 +562,14 @@ a {
   margin-top: 55px;
   display: flex; 
   gap: 30px;
+  overflow: hidden;
 }
 
 .blog .blog-item {
-  width: 33.33%;
+  width: calc(33.33% - 20px);
   border-radius: 16px;
   background: #FFF;
+  flex-shrink: 0;
 }
 .blog .blog-item:hover {
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
@@ -639,7 +641,7 @@ a {
 }
 
 .blog .dots{
-  margin-top: 28px;
+  margin-top: 38px;
   display: flex;
   justify-content: center;
   gap: 6px;
@@ -649,7 +651,7 @@ a {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #634700;
+  background: #5F5B53;
   cursor: pointer;
 }
 .blog .dot.active{
